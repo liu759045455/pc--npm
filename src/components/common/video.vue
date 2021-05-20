@@ -1,4 +1,5 @@
 <template>
+<!-- 视频组件 -->
   <div class="s-mask-fixed" style="z-index: 11">
     <div class="s-video-wrapper" id="videoWrapper">
       <div class="close" id="close" @click="closeClick">X 关闭</div>

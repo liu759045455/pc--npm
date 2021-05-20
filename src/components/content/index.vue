@@ -1,4 +1,5 @@
 <template>
+<!-- 文章页模板 -->
   <div class="content">
     <breadcrumb :categories="categories" />
     <div class="container">
