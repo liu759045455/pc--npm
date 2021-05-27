@@ -5,120 +5,38 @@ Vue.use(VueRouter)
 
 const routes = [{
   path: '/',
-  redirect: '/protection'
+  redirect: '/bigTower'
 }, {
-  path: '/protection',
-  name: '连云港徐圩新区环保治理攻坚大队',
+  path: '/bigTower',
+  name: '江苏大塔网络科技有限公司',
   component: () => import('@v/index.vue'),
   children: [{
-    path: '/protection',
-    redirect: '/protection/index'
+    path: '/bigTower',
+    redirect: '/bigTower/index'
   }, {
-    path: '/protection/index',
+    path: '/bigTower/index',
     name: '首页',
     alias: "nav",
-    // component: () => import('@c/protection/index.vue'),
+    component: () => import('@v/bigTower/index.vue'),
   }, 
-  // {
-  //   path: '/protection/situation',
-  //   name: '新区概况',
-  //   alias: "nav",
-  //   component: () => import('@c/protection/situation.vue')
-  // }, {
-  //   path: '/protection/about',
-  //   name: '关于我们',
-  //   alias: "nav",
-  //   component: () => import('@c/protection/about.vue')
-  // }, {
-  //   path: '/protection/news',
-  //   name: '新闻中心',
-  //   alias: "nav",
-  //   component: () => import('@c/protection/news.vue'),
-  //   // children: [
-  //   //     {
-  //   //       path: "/protection/news/great",
-  //   //       name: "大队新闻",
-  //   //       component: () => import("@c/news/great.vue"),
-  //   //       children: [{
-  //   //         path: "/protection/news",
-  //   //         name: "正文",
-  //   //         component: () => import("@c/content/index.vue")
-  //   //       }, ]
-  //   //     },
-  //   //   {
-  //   //     path: "/protection/news/media",
-  //   //     name: "媒体报道",
-  //   //     component: () => import("@c/news/media.vue"),
-  //   //     children: [{
-  //   //       path: "/protection/news",
-  //   //       name: "正文",
-  //   //       component: () => import("@c/content/index.vue")
-  //   //     }, ]
-  //   //   },
-  //   //   {
-  //   //     path: "/protection/news/policy",
-  //   //     name: "政策文件",
-  //   //     component: () => import("@c/news/policy.vue"),
-  //   //     children: [{
-  //   //       path: "/protection/news",
-  //   //       name: "正文",
-  //   //       component: () => import("@c/content/index.vue")
-  //   //     }, ]
-  //   //   },
-  //   // ]
-  // }, 
-  
-  // {
-  //   path: '/protection/party',
-  //   alias: "nav",
-  //   name: '党建工作',
-  //   component: () => import('@c/protection/party.vue'),
-  // //   children: [
-  // //       {
-  // //       path: "/protection/party/index",
-  // //       name: "大队党建",
-  // //       component: () => import("@c/party/index.vue"),
-  // //         children: [
-  // //           {
-  // //           path: "/protection/party",
-  // //           name: "正文",
-  // //           component: () => import("@c/content/index.vue")
-  // //         }, 
-  // //     ]
-  // //     }, 
-  // //     {
-  // //       path: "/protection/party/activities",
-  // //       name: "专题活动",
-  // //       component: () => import("@c/party/activities.vue"),
-  // //       children: [
-  // //           {
-  // //           path: "/protection/party",
-  // //           name: "正文",
-  // //           component: () => import("@c/content/index.vue")
-  // //         },
-  // //      ]
-  // //     }, 
-  // // ]
-  // }, {
-  //   path: '/protection/resources',
-  //   alias: "nav",
-  //   name: '人力资源',
-  //   component: () => import('@c/protection/resources.vue'),
-  //   // children: [{
-  //   //   path: "/protection/resources/training",
-  //   //   name: "培训发展",
-  //   //   component: () => import("@c/resources/training.vue"),
-  //   //   children: [{
-  //   //     path: "/protection/resources",
-  //   //     name: "正文",
-  //   //     component: () => import("@c/content/index.vue")
-  //   //   }, ]
-  //   // }, ]
-  // }, {
-  //   path: '/protection/search',
-  //   name: '搜索内容',
-  //   component: () => import('@c/search/index.vue')
-  // }
+  {
+    path: '/bigTower/about',
+    name: '关于我们',
+    alias: "nav",
+    component: () => import('@v/about/index.vue')
+  },
+  {
+    path: '/bigTower/business',
+    name: '业务',
+    alias: "nav",
+    component: () => import('@v/business/index.vue')
+  },
+  {
+    path: '/bigTower/case',
+    name: '案例',
+    alias: "nav",
+    component: () => import('@v/case/index.vue')
+  },
 ]
 }]
 
