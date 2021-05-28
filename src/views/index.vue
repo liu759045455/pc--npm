@@ -14,14 +14,14 @@
 </template>
 
 <script>
-import footers from "@c/footer/index.vue";
-import headers from "@c/header/index.vue";
+import footers from '@c/footer/index.vue'
+import headers from '@c/header/index.vue'
 
 export default {
   data() {
     return {
       routerList: [],
-    };
+    }
   },
   mounted() {},
   created() {},
@@ -31,7 +31,7 @@ export default {
     footers,
     headers,
   },
-};
+}
 </script>
 
 <style lang="less" scoped>

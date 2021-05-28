@@ -9,7 +9,7 @@ export function IndexList() {
 
 export function PostBanners() {
     return axios({
-        url: "/brigade/view/banners",
+        url: "/datalyg/view/banners",
         method: "post"
     })
 }

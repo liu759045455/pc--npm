@@ -31,8 +31,9 @@ module.exports = {
     },
     /* 跨域代理 */
     proxy: {
-      "/brigade": {
+      "/datalyg": {
         /* 目标代理服务器地址 */
+        /* 接口请求地址 */
         // target: "", //
         // target: "https://bid.hongaodata.com/api",
         // target: "http://192.168.0.111:8888",
@@ -42,6 +43,7 @@ module.exports = {
         ws: true
       },
       '/group1': {
+        /* 图片请求地址 */
         target: `http://192.168.0.101:8081`,
         changeOrigin: true,
         secure: false,
